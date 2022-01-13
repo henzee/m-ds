@@ -1,6 +1,6 @@
-@import "../../tokens/scss/variables";
+@import "../../tokens/tokens.scss";
 
-button {
+.btn-secondary {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 1rem;
@@ -16,5 +16,4 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
-}
+    height: 3rem;}

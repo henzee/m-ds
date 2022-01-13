@@ -2,9 +2,11 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
-import sass from "node-sass"
+import sass from "node-sass";
+import ts from "rollup-plugin-ts";
 
 import postcss from "rollup-plugin-postcss";
+import litcss from "rollup-plugin-postcss-lit";
 
 const packageJson = require("./package.json");
 
@@ -26,15 +28,17 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
-      typescript({ sourceMap: false, tsconfig: "./tsconfig.json" }),
+      typescript({ tsconfig: "./tsconfig.json", sourceMap: true }),
       postcss({
-        preprocessor: (content, id) => new Promise((resolve, reject) => {
-          const result = sass.renderSync({ file: id })
-          resolve({ code: result.css.toString() })
-        }),
+        preprocessor: (content, id) =>
+          new Promise((resolve, reject) => {
+            const result = sass.renderSync({ file: id });
+            resolve({ code: result.css.toString() });
+          }),
         sourceMap: false,
-        extensions: ['.scss','.css']
+        extensions: [".scss", ".css"],
       }),
+      litcss(),
     ],
   },
   {
