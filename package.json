@@ -1,9 +1,9 @@
 {
   "name": "@henzee/m-ds",
-  "author": "",
+  "author": "Heikki Säily",
   "license": "ISC",
   "version": "1.0.15",
-  "description": "",
+  "description": "Webcomponent library POC",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
