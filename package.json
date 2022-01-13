@@ -14,8 +14,9 @@
   },
   "types": "dist/index.d.ts",
   "scripts": {
+    "tokens": "style-dictionary build --config ./sd.config.json",
     "rollup": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run tokens & npm run rollup"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
@@ -26,6 +27,7 @@
     "rollup": "^2.63.0",
     "rollup-plugin-dts": "^4.1.0",
     "rollup-plugin-postcss": "^4.0.2",
+    "style-dictionary": "^3.1.1",
     "typescript": "^4.5.4"
   },
   "dependencies": {
