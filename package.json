@@ -2,7 +2,7 @@
   "name": "@henzee/m-ds",
   "author": "Heikki Säily",
   "license": "ISC",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "description": "Webcomponent library POC",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
