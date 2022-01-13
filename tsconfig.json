@@ -14,7 +14,7 @@
 
     // Added
     // "jsx": "react", 
-    //"module": "ESNext",  
+    // "module": "ESNext",  
     "declaration": true,
     "declarationDir": "types",
     "sourceMap": true,
@@ -26,6 +26,6 @@
     "rootDir": "./src",
     "outDir": "dist",
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "declarations.d.ts"],
   "exclude": []
 }
