@@ -16,4 +16,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;}
+    height: 3rem;
+    &:hover {
+        background: $brand-brand-light;
+    }
+    &:focus {
+        outline: 2px solid $neutrals-90-black;
+        box-shadow: inset 2px 2px 0px 2px $neutrals-white, inset -2px -2px 0px 2px $neutrals-white;
+    }
+
+    &:active {
+        background: $brand-brand-dark;
+    }
+}
