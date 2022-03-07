@@ -3,7 +3,6 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import sass from "node-sass";
-import ts from "rollup-plugin-ts";
 
 import postcss from "rollup-plugin-postcss";
 import litcss from "rollup-plugin-postcss-lit";
@@ -28,7 +27,7 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
-      typescript({ tsconfig: "./tsconfig.json", sourceMap: true }),
+      typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
         preprocessor: (content, id) =>
           new Promise((resolve, reject) => {

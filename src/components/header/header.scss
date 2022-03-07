@@ -1,0 +1,122 @@
+@import "../../tokens/tokens.scss";
+
+.header {
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(16, 24, 32, 0.05);
+}
+
+.secondary-navigation {
+  background: $neutrals-5-extralight;
+  padding: 0.5rem;
+}
+
+.secondary-navigation > .wrapper {
+  display: flex;
+  padding: 0 6.25rem;
+  justify-content: space-between;
+  max-width: 77.5rem;
+  margin: 0 auto;
+}
+
+.external-link {
+  visibility: hidden;
+}
+
+.navigation-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list > .list-item:not(:last-child) {
+  margin: 0 3rem 0 0;
+}
+
+.navigation-link {
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.navigation-link > svg {
+  margin: 0 0.5rem 0 0;
+}
+
+/* menu */
+.menu {
+  background: $neutrals-white;
+  padding: 0.5rem;
+}
+
+.menu > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 6.25rem;
+  max-width: 77.5rem;
+}
+
+.menu > .wrapper > .left > img {
+  background: $brand-brand;
+  margin: 0 3rem 0 0;
+}
+
+.menu > .wrapper > .left {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-item {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  white-space: nowrap;
+}
+
+.main-nav-item:not(:last-child) {
+  margin: 0 3rem 0 0;
+}
+
+.global-search {
+  display: flex;
+  border: thin solid $neutrals-40-medium-dark;
+  border-radius: 0.25rem;
+  margin: 0 0 0 3rem;
+  padding: 0;
+  box-sizing: border-box;
+  flex: 1;
+  max-width: 22rem;
+}
+
+.global-search-field {
+  height: 3rem;
+  margin: 0;
+  padding: 0 1rem;
+  flex: 1;
+  border: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+  font-family: $body-normal-font-family;
+  font-size: $body-normal-font-size;
+  color: $text-90-text-primary;
+}
+
+.global-search-button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-left: thin solid $neutrals-40-medium-dark;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background: $brand-brand;
+}

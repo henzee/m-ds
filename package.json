@@ -2,7 +2,7 @@
   "name": "@henzee/m-ds",
   "author": "Heikki Säily",
   "license": "ISC",
-  "version": "1.0.43",
+  "version": "1.0.61",
   "description": "Webcomponent library POC",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -29,7 +29,6 @@
     "rollup-plugin-dts": "^4.1.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-scss": "^3.0.0",
-    "rollup-plugin-ts": "^2.0.5",
     "style-dictionary": "^3.1.1",
     "typescript": "^4.5.4"
   },
